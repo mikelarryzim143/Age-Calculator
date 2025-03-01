@@ -8,11 +8,15 @@
 <body>
     <h1>Age Calculator</h1>
     <label for="age">Enter your birth date:</label>
-    <input type="date" name="age" id="age">
-    <input type="submit" value="Calculate" required>
-    <div class="resultss"></div>
+    <input type="date" name="age" id="age"  required>
+    <input type="submit" value="Calculate" onclick="getage()">
+    <div class="resultss" id="resultss"></div>
     <script>
-        
+        function getage(){
+            const a=new Date(document.getElementById("age").value).getFullYear();
+            let age=new Date().getFullYear()-a;
+            document.getElementById("resultss").innerHTML = `<p>you are ${age} years old</p>`;
+        }
     </script>
 </body>
 </html>
