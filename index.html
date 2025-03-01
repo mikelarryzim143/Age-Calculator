@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Age Calculator">
+    <meta name="keywords" content="Age Calculator">
+    <meta name="author" content="Larry Last Murimi">
+
+    <meta property="og:title" content="Larry Last Murimi - Age Calculator">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="linkedin.com/in/larrymurimi">
+    <meta property="og:image" content="linkedin.com/in/larrymurimi">
+    <meta property="og:description" content="Age Calculator">
+    <meta property="og:site_name" content="Larry Murimi Age Calculator">
+    <title>Age Calculator</title>
+    <!-- Load Flatpickr Styles -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<!-- Load JavaScript Libraries -->
+<script defer src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/luxon@3.4.3/build/global/luxon.min.js"></script>
+
+<!-- Load Your Script -->
+<script defer src="/Age-Calculator/index.js"></script>
+    <link rel="stylesheet" href="/Age-Calculator/index.css">
+     <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Age Calculator</h2>
+        <form id="ageForm">
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="text" id="birthdate" placeholder="Select your birthdate" required>
+            <button type="submit">Calculate Age</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</body>
+</html>
